@@ -18,7 +18,7 @@ const move = (img) => {
   const style = getComputedStyle(img);
   let pos = style.left;
   let posValue = parseInt(pos);
-  img.style.transition = "left 1s ";
+  img.style.transition = "left 1s ease-out ";
   img.style.left = posValue + 50 + "px";
   if (posValue < 1400) {
     posValue++;
