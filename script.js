@@ -20,7 +20,7 @@ const move = (img) => {
   let posValue = parseInt(pos);
   img.style.transition = "left 1s ease-out ";
   img.style.left = posValue + 50 + "px";
-  if (posValue < 1400) {
+  if (posValue + 50 <= 1390) {
     posValue++;
   } else {
     posValue = -2000;
